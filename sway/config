@@ -47,11 +47,16 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
 ### Input configuration
 #
-# Example configuration:
-#
+
+input type:keyboard {
+    xkb_capslock disabled
+    xkb_numlock disabled
+    xkb_options caps:escape
+}
+
 input "2:7:SynPS/2_Synaptics_TouchPad" {
     dwt enabled
-    tap enabled
+    click_method clickfinger # enables two finger right click
     natural_scroll enabled
     middle_emulation enabled
 }
