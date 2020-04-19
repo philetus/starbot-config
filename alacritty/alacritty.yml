@@ -4,6 +4,8 @@ shell:
 window:
   decorations: none
 
+background_opacity: 0.7
+
 # Font configuration (changes require restart)
 font:
   # The normal (roman) font face to use.

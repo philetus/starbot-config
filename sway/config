@@ -20,10 +20,14 @@ set $term alacritty
 # on the original workspace that the command was run on.
 set $menu dmenu_path | wofi --show drun | xargs swaymsg exec --
 
+# stylish gaps between windows
+gaps inner 5
+gaps outer 1
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg ~/.config/sway/images/bubble_nebula.jpg fill
 #
 # Example configuration:
 #
@@ -219,5 +223,7 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
+
+
 
 include /etc/sway/config.d/*
