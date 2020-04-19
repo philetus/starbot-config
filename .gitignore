@@ -1,4 +1,5 @@
 /sublime-text-3/Cache/
 /sublime-text-3/Local/
-/pulse/*-device-volumes.tdb
+/sublime-text-3/Index/
+/pulse/*-volumes.tdb
 /pavucontrol.ini
