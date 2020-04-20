@@ -47,4 +47,4 @@ then
   volume="🔇"
 fi
 
-echo "$network_status | ${brightness} | ${battery_percentage} ${battery_emoji} | $volume | ${date_formatted}"
+echo "starbot 🌟 | $network_status | ${brightness} | ${battery_percentage} ${battery_emoji} | $volume | ${date_formatted}"
