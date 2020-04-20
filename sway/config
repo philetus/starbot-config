@@ -24,6 +24,12 @@ set $menu dmenu_path | wofi --show drun | xargs swaymsg exec --
 gaps inner 5
 gaps outer 1
 
+# colors                border  bg      text    indi    childborder
+client.focused          #aa0088 #7700aa #ffffff #ff00dd #cc00aa
+client.focused_inactive #333333 #666666 #ffffff #444444 #666666
+client.unfocused        #333333 #222222 #888888 #222222 #222222
+client.urgent           #222222 #aa0000 #ffffff #aa0000 #aa0000
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
