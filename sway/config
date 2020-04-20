@@ -81,6 +81,9 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
     # Start a terminal
     bindsym $mod+Return exec $term
 
+    # lock screen
+    bindsym $mod+Shift+Return exec swaylock -i ~/.config/sway/images/horsehead_nebula.jpg
+
     # Kill focused window
     bindsym $mod+Shift+q kill
 
