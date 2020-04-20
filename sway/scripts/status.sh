@@ -34,4 +34,17 @@ else
   network_status="🌵"
 fi
 
-echo "$network_status | ${battery_percentage}%${battery_emoji} | ${date_formatted}"
+brightness="$(light | awk -F. '{print $1}') 🌞"
+
+volume="$(pactl list sinks | grep '^[[:space:]]Volume:' | \
+  head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,' \
+) 🔊"
+
+muted=$(pacmd list-sinks | awk '($1=="muted:") {print $2}')
+
+if [ $muted == "yes" ]
+then
+  volume="🔇"
+fi
+
+echo "$network_status | ${brightness} | ${battery_percentage} ${battery_emoji} | $volume | ${date_formatted}"
